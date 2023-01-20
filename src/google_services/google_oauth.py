@@ -5,6 +5,7 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 
 
+
 class GoogleOAuth:
     def __init__(self):
         self.SCOPES = [
@@ -40,3 +41,4 @@ class GoogleOAuth:
                 token.write(creds.to_json())
 
         self.creds = creds
+
