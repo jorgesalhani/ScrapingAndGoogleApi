@@ -1,7 +1,7 @@
-from src.browser.scrapping.google_opening import GoogleOpeningPage
+from src.browser.scrapping.google_page import GooglePage
 import re
 
 def test_login_button():
-    google_page = GoogleOpeningPage(headless=True)
-    button = str(google_page.get_login_button()[0])
+    google_page = GooglePage(headless=True)
+    button = str(google_page.login_button()[0])
     assert bool(re.search('Login', button))

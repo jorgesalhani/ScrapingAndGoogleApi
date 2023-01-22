@@ -1,5 +1,6 @@
 from src.google_services.google_sheets import GoogleSheets
 from src.google_services.google_user_info import GoogleUserInfo
+from src.browser.scrapping.google_page import GooglePage
 
 if __name__ == '__main__':
     data = GoogleSheets().get_all_data(
@@ -9,3 +10,8 @@ if __name__ == '__main__':
     user = GoogleUserInfo().user_info()
     print(user)
     print(data)
+
+    google_page = GooglePage()
+    button = google_page.login_button()
+
+    print(button)
