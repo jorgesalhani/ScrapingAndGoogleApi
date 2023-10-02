@@ -1,6 +1,4 @@
+*.json
 .*
-!.gitignore
-
-*cache*
-token.json
-chrome-win/
+!.claspignore
+node_modules
